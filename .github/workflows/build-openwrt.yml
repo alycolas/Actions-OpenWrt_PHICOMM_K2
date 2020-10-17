@@ -127,8 +127,8 @@ jobs:
         # EOF
         # IPv6支持:
         # cat >> .config <<EOF
-        # CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
-        # CONFIG_PACKAGE_ipv6helper=y
+        CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+        CONFIG_PACKAGE_ipv6helper=y
         # EOF
         # 多文件系统支持:
         # cat >> .config <<EOF
@@ -197,7 +197,7 @@ jobs:
         # CONFIG_PACKAGE_luci-app-freifunk-widgets is not set
         # CONFIG_PACKAGE_luci-app-frpc is not set
         # CONFIG_PACKAGE_luci-app-fwknopd is not set
-        # CONFIG_PACKAGE_luci-app-guest-wifi is not set
+        CONFIG_PACKAGE_luci-app-guest-wifi=y
         # CONFIG_PACKAGE_luci-app-haproxy-tcp is not set
         # CONFIG_PACKAGE_luci-app-hd-idle is not set
         # CONFIG_PACKAGE_luci-app-hnet is not set
@@ -280,7 +280,7 @@ jobs:
         # CONFIG_PACKAGE_luci-app-ssr-python-pro-server is not set
         # CONFIG_PACKAGE_luci-app-ssrserver-python is not set
         # CONFIG_PACKAGE_luci-app-statistics is not set
-        CONFIG_PACKAGE_luci-app-syncdial=y
+        # CONFIG_PACKAGE_luci-app-syncdial=y
         # CONFIG_PACKAGE_luci-app-syncthing is not set
         # CONFIG_PACKAGE_luci-app-tinyproxy is not set
         # CONFIG_PACKAGE_luci-app-transmission is not set
