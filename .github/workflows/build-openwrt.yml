@@ -156,6 +156,7 @@ jobs:
         CONFIG_PACKAGE_luci-app-e2guardian=y
         CONFIG_PACKAGE_luci-app-firewall=y
         CONFIG_PACKAGE_luci-app-mjpg-streamer=y
+        CONFIG_PACKAGE_luci-app-squid=y
         CONFIG_PACKAGE_luci-app-mwan3=y
         CONFIG_PACKAGE_luci-app-nlbwmon=y
         CONFIG_PACKAGE_luci-app-qos=y
@@ -196,7 +197,7 @@ jobs:
         # LuCI主题:
         cat >> .config <<EOF
         CONFIG_PACKAGE_luci-theme-argon=y
-        CONFIG_PACKAGE_luci-theme-netgear=y
+        # CONFIG_PACKAGE_luci-theme-netgear=y
         CONFIG_PACKAGE_luci-theme-atmaterial=y
         EOF
         # 常用软件包:
@@ -213,6 +214,7 @@ jobs:
         CONFIG_PACKAGE_k3wifi=y
         
         CONFIG_PACKAGE_curl=y
+        CONFIG_PACKAGE_iperf3=y
         CONFIG_PACKAGE_htop=y
         CONFIG_PACKAGE_nano=y
         CONFIG_PACKAGE_screen=y
